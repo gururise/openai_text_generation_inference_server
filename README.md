@@ -40,7 +40,7 @@ You will also need a valid OpenAI API key to authenticate your requests.
     The server will start running on http://localhost:8000 by default.
 2. Update the `.env.local` file on your HuggingChat UI installation to include:
 
-    ```json
+    ```python
     MODELS=`[
     {
         "name": "ChatGPT 3.5 Model",
