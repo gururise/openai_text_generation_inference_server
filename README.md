@@ -17,7 +17,7 @@ To run the code in this repository, you need the following:
 - FastAPI
 - Pydantic
 - OpenAI Python SDK
-- aiohttp
+- asyncio
 
 You will also need a valid OpenAI API key to authenticate your requests.
 
