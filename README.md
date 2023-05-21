@@ -38,8 +38,26 @@ You will also need a valid OpenAI API key to authenticate your requests.
     ```uvicorn main:app --reload```
 
     The server will start running on http://localhost:8000 by default.
+2. Update the `.env.local` file on your HuggingChat UI installation to include:
 
-2. Use the Hugging Chat UI with the OpenAI integration:
+    ```
+    MODELS=`[
+    {
+        "name": "ChatGPT 3.5 Model",
+        "endpoints": [{"url": "http://127.0.0.1:8000/generate_stream"}],
+        "userMessageToken": "user",
+        "assistantMessageToken": "assistant",
+        "messageEndToken": "\n",
+        "preprompt": "You are a helpful assistant.",
+        "parameters": {
+        "temperature": 0.9,
+        "max_new_tokens": 50
+        }
+    }
+    ]`
+    ```
+## Testing
+1. Using curl, you can manually test via:
 
     Make a POST request to http://localhost:8000/generate_stream with the following JSON payload:
 
