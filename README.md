@@ -35,7 +35,7 @@ You will also need a valid OpenAI API key to authenticate your requests.
 ## Usage
 1. Start the FastAPI server by running the following command:
 
-    ```uvicorn main:app --reload```
+    ```uvicorn server:app --reload```
 
     The server will start running on http://localhost:8000 by default.
 2. Update the `.env.local` file on your HuggingChat UI installation to include:
