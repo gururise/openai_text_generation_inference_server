@@ -51,7 +51,8 @@ You will also need a valid OpenAI API key to authenticate your requests.
         "preprompt": "You are a helpful assistant.",
         "parameters": {
         "temperature": 0.9,
-        "max_new_tokens": 50
+        "max_new_tokens": 50,
+        "truncate": 1000
         }
     }
     ]`
