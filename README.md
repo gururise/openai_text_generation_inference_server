@@ -45,8 +45,8 @@ You will also need a valid OpenAI API key to authenticate your requests.
     {
         "name": "ChatGPT 3.5 Model",
         "endpoints": [{"url": "http://127.0.0.1:8000/generate_stream"}],
-        "userMessageToken": "user",
-        "assistantMessageToken": "assistant",
+        "userMessageToken": "User: ",
+        "assistantMessageToken": "Assistant: ",
         "messageEndToken": "\n",
         "preprompt": "You are a helpful assistant.",
         "parameters": {
