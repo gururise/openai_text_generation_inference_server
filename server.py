@@ -30,7 +30,7 @@ import os
 
 app = FastAPI()
 
-openai.api_key = os.environ['OPEN_API_KEY']
+openai.api_key = os.environ['OPENAI_API_KEY']
 DEFAULT_TEMPERATURE = 0.7
 DEFAULT_MAX_TOKENS = 100
 
