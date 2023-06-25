@@ -22,11 +22,14 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Optional
 from fastapi.responses import StreamingResponse
+from dotenv import load_dotenv
 import json
 import random
 import openai
 import asyncio
 import os
+
+load_dotenv()
 
 app = FastAPI()
 
@@ -77,7 +80,7 @@ async def get_openai_stream_data(request):
                     "special": special,
                 },
                 "generated_text": final_text,
-                "details":details
+                "details": details
             }
             json_string = json.dumps(tok,separators=(',', ':'))
             result = f"data:{json_string}"
